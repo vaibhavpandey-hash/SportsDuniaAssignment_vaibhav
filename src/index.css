@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+/* College Card Styles */
+.college {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.college:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.college h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.college p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.featured {
+  display: inline-block;
+  background-color: #e67e22;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.featured:hover {
+  background-color: #d35400;
+  transform: scale(1.05);
+}
+
+/* Controls Styles */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.controls select {
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.controls select:last-child {
+  margin-right: 0;
+}
+
+/* Infinite Scroll Loader */
+.controls .loader {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls .loader h4 {
+  font-size: 18px;
+  color: #888;
+}
+
+/* Table and Button Styles */
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th:nth-child(1) {
+  width: 8%;
+}
+
+th:nth-child(2) {
+  width: 35%;
+}
+
+td:nth-child(2) .colorBlue {
+  color: #00a9ff;
+}
+
+td {
+  border-top: none;
+  border-left: none;
+  font-size: 12px;
+}
+
+table th:nth-child(n+3),
+table td:nth-child(n+3) {
+  width: 12%;
+}
+
+.buttonsInName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.buttonsInName button {
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+
+.buttonsInName button:nth-child(1) {
+  color: #e74c3c;
+}
+
+.buttonsInName button:nth-child(2) {
+  color: #2ecc71;
+}
+
+.money {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.compareFees {
+  color: #e74c3c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.backgroundOrange {
+  background-color: rgba(255, 225, 171, 0.55);
+}
+
+span {
+  border-radius: 50%;
+  color: #e67e22;
+}
+
+.fontSize {
+  font-size: 12px;
+}
+
+.socialLife {
+  color: #e67e22;
+  background-color: rgba(255, 225, 171, 0.55);
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.orangeColor {
+  background-color: rgba(255, 225, 171, 0.55);
+  border-left: 2px solid #e67e22;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.orangeHeading {
+  color: #e67e22;
+}
+
+table td:nth-child(2) p {
+  font-size: 12px;
+}
+
+.button-with-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 2px;
+}
+
+.lightBlue {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(211, 251, 255, 0.96);
+  text-align: center;
+  padding: 2px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.lightBlue span {
+  color: #00a9ff;
+  font-weight: bold;
+}
+
+/* Custom Bullet Style */
+.custom-bullet {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-bullet .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #e67e22;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls input,
+  .controls select {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .controls select:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h4 {
+  margin-bottom: 5px;
+}
