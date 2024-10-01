@@ -11,7 +11,7 @@ layout.
 # To run - 
 
 1.  Installing the neccessary modules using
-    # npm i
+    # npm install
 
 2.  To run the project
     # npm run dev
